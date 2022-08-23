@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  border: 5px solid black;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: Calc(15vw + 15vh);
+  max-width: 100%;
+}
+
+.box p {
+  position: absolute;
+}
+
+.box:hover {
+  border: 5px solid red;
+}
+
+.container {
+  border: 5px solid black;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+h1 {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  font-size: Calc(3vw + 2vh);
+  background-color: white;
+  z-index: 1;
+  color: red;
+}
